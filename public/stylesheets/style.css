@@ -1,0 +1,86 @@
+html { 
+  background-image:;
+  background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHZpZXdCb3g9IjAgMCAxIDEiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPgo8bGluZWFyR3JhZGllbnQgaWQ9Imc4NTciIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIiB4MT0iMCUiIHkxPSIwJSIgeDI9IjAlIiB5Mj0iMTAwJSI+CjxzdG9wIHN0b3AtY29sb3I9IiMzMkJBRkYiIG9mZnNldD0iMCIvPjxzdG9wIHN0b3AtY29sb3I9IiNCRkVBRkYiIG9mZnNldD0iMSIvPgo8L2xpbmVhckdyYWRpZW50Pgo8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2c4NTcpIiAvPgo8L3N2Zz4=) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: transparent;
+}
+
+header {
+  -webkit-border-radius: 5px 5px 0px 0px;
+  -moz-border-radius: 5px 5px 0px 0px;
+  border-radius: 5px 5px 0px 0px;
+  background-color: rgba(255,255,255,0.85);
+  -moz-box-shadow:    0px 0px 6px 4px #b8e6fe;
+  -webkit-box-shadow: 0px 0px 6px 4px #b8e6fe;
+  box-shadow:         0px 0px 6px 4px #b8e6fe;
+  padding: 5px;
+}
+
+#title-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#subtitle {
+  text-align: center
+}
+
+.separator {
+  height: 10px;
+  background-color: #005EA2;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.content {
+  background-color: rgba(18,155,223,0.5);
+  margin-left: 0;
+  margin-right: 0;
+  padding: 10px;
+  -moz-box-shadow:    0px 0px 6px 4px #b8e6fe;
+  -webkit-box-shadow: 0px 0px 6px 4px #b8e6fe;
+  box-shadow:         0px 0px 6px 4px #b8e6fe;
+  -webkit-border-radius: 5px 5px 5px 5px;
+  -moz-border-radius: 5px 5px 5px 5px;
+  border-radius: 5px 5px 5px 5px;
+}
+
+.content-img {
+  width: 100%;
+}
+
+.equation {
+  text-shadow: 0px 3px 10px rgba(0, 0, 0, 1);
+  font-size: 200px;
+  text-align: center;
+  display: block;
+}
+
+.caption {
+  text-align: center;
+  display: block;
+  font-size: 30px;
+}
+
+#steps {
+  background-color: rgba(255,255,255,0.85);
+  padding: 10px;
+  -moz-box-shadow:    0px 0px 6px 4px #b8e6fe;
+  -webkit-box-shadow: 0px 0px 6px 4px #b8e6fe;
+  box-shadow:         0px 0px 6px 4px #b8e6fe;
+  -webkit-border-radius: 5px 5px 5px 5px;
+  -moz-border-radius: 5px 5px 5px 5px;
+  border-radius: 5px 5px 5px 5px;
+}

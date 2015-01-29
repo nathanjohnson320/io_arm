@@ -1,0 +1,39 @@
+extends layout
+
+block content
+  header
+    div(id="subtitle")
+      span An easy way to install io.js on the Raspberry Pi
+  div(class="separator")
+  div(class="row content")
+    div(class="col-md-2")
+		  span(class="caption") io.js
+    span(class="col-md-2 equation") +
+    div(class="col-md-2")
+      img(class="content-img center-block", src="images/rpi.png")
+      span(class="caption") Raspberry Pi
+    span(class="col-md-2 equation") =
+    div(class="col-md-4")
+      img(class="img-circle content-img center-block", src="images/project.png")
+      span(class="caption") Cool Projects!
+  div(class="separator")
+  div(id="steps")
+    h1 Step 1: Download
+    ul
+      li
+        a(href="/io_latest_armhf.deb", class="download-link") v#{versions[0].version} 
+        span(class="download-count") (#{versions[0].downloads} downloads)
+
+    span(class="download-count") Total Downloads: #{total}
+    code
+      pre.
+        To Download via command line
+        * wget http://io-arm.herokuapp.com/io_latest_armhf.deb
+
+
+    h1 Step 2: Install
+    code
+      pre.
+        sudo dpkg -i io_latest_armhf.deb
+        # Check installation
+        iojs -v
