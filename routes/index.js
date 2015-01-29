@@ -19,7 +19,7 @@ router.get('/', function(req, res) {
       collection.mapReduce(map, reduce, {out : {inline: 1}}, function(err, results) {
         collection.find().sort({"version": -1}).toArray(function(err, rs) {
           var total = results.length > 0 ? results[0].value : "Over 9,000";
-          res.render('index', { title: 'node-arm', total: total, versions: rs });
+          res.render('index', { title: 'io-arm', total: total, versions: rs });
         });
       });
     });
