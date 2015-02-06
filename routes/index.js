@@ -27,31 +27,11 @@ router.get('/', function(req, res) {
 
 });
 
-/*router.get('/node_0.10.35_armhf.deb', function (req, res) {
-  mongo.Db.connect(mongoUri, function (err, db) {
-    db.collection('downloads', function(err, collection) {
-      collection.update({ "version": "0.10.35" }, { $inc: { "downloads": 1 } }, { upsert: true }, function(err, rs){
-        res.download(__dirname + '/files/node_0.10.35-1_armhf.deb');
-      });
-    });
-  });
-});
-
-router.get('/node_0.10.34_armhf.deb', function (req, res) {
-  mongo.Db.connect(mongoUri, function (err, db) {
-    db.collection('downloads', function(err, collection) {
-      collection.update({ "version": "0.10.34" }, { $inc: { "downloads": 1 } }, { upsert: true }, function(err,rs) {
-        res.download(__dirname + '/files/node_0.10.34-1_armhf.deb');
-      });
-    });
-  });
-});*/
-
 router.get('/io_latest_armhf.deb', function (req, res) {
   mongo.Db.connect(mongoUri, function (err, db) {
     db.collection('downloads', function(err, collection) {
-      collection.update({ "version": "1.0.4" }, { $inc: { "downloads": 1 } }, { upsert: true }, function(err,rs) {
-        res.download(__dirname + '/files/io.js_1.0.4-1_armhf.deb', 'io_latest_armhf.deb');
+      collection.update({ "version": "1.1.0" }, { $inc: { "downloads": 1 } }, { upsert: true }, function(err,rs) {
+        res.download(__dirname + '/files/io.js_1.1.0-1_armhf.deb', 'io_latest_armhf.deb');
       });
     });
   });
