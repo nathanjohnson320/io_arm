@@ -30,8 +30,8 @@ router.get('/', function(req, res) {
 router.get('/io_latest_armhf.deb', function (req, res) {
   mongo.Db.connect(mongoUri, function (err, db) {
     db.collection('downloads', function(err, collection) {
-      collection.update({ "version": "1.1.0" }, { $inc: { "downloads": 1 } }, { upsert: true }, function(err,rs) {
-        res.download(__dirname + '/files/io.js_1.1.0-1_armhf.deb', 'io_latest_armhf.deb');
+      collection.update({ "version": "1.2.0" }, { $inc: { "downloads": 1 } }, { upsert: true }, function(err,rs) {
+        res.download(__dirname + '/files/io.js_1.2.0-1_armhf.deb', 'io_latest_armhf.deb');
       });
     });
   });
