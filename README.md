@@ -1,5 +1,9 @@
-io_arm (Raspbian Wheezy)
+THIS REPO IS NO LONGER MAINTAINED
 ==========================
+
+You can download the binaries for io at: https://iojs.org/download/release/
+And untar https://iojs.org/download/release/vX.X.X/iojs-vX.X.X-linux-armv6l.tar.gz
+
 ### Installing io.js for ARM (Tested on Raspberry Pi Model B/+)
 ```
 wget http://io-arm.herokuapp.com/io_latest_armhf.deb
